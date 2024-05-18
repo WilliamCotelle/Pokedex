@@ -1,0 +1,359 @@
+[
+  {
+    "id": "1",
+    "name": "Bulbizarre",
+    "type": ["Plante", "Poison"],
+    "description": "Bulbizarre passe son temps à faire la sieste sous le soleil. Une graine est plantée sur son dos. En absorbant les rayons du soleil, la graine grandit progressivement.",
+    "image": "/static/images/bulbasaur.png"
+  },
+  {
+    "id": "2",
+    "name": "Herbizarre",
+    "type": ["Plante", "Poison"],
+    "description": "Quand le bulbe sur son dos grandit, il semble perdre la capacité de se tenir debout sur ses pattes arrière.",
+    "image": "/static/images/ivysaur.png"
+  },
+  {
+    "id": "3",
+    "name": "Florizarre",
+    "type": ["Plante", "Poison"],
+    "description": "La plante fleurit en absorbant l'énergie solaire. Il reste en mouvement pour chercher la lumière du soleil.",
+    "image": "/static/images/venusaur.png"
+  },
+  {
+    "id": "4",
+    "name": "Salamèche",
+    "type": ["Feu"],
+    "description": "La flamme qui brûle au bout de sa queue est une indication de ses émotions. La flamme vacille lorsque Salamèche est content. Si le Pokémon se met en colère, la flamme brûle vivement.",
+    "image": "/static/images/charmander.png"
+  },
+  {
+    "id": "5",
+    "name": "Reptincel",
+    "type": ["Feu"],
+    "description": "Quand il balance sa queue enflammée, il élève la température à des niveaux insupportablement élevés.",
+    "image": "/static/images/charmeleon.png"
+  },
+  {
+    "id": "6",
+    "name": "Dracaufeu",
+    "type": ["Feu", "Vol"],
+    "description": "Il crache du feu assez chaud pour faire fondre des rochers. Il peut provoquer des incendies de forêt en soufflant des flammes.",
+    "image": "/static/images/charizard.png"
+  },
+  {
+    "id": "7",
+    "name": "Carapuce",
+    "type": ["Eau"],
+    "description": "La carapace de Carapuce ne sert pas seulement à le protéger. La forme arrondie de la carapace et les rainures sur sa surface aident à minimiser la résistance dans l'eau, permettant à ce Pokémon de nager à grande vitesse.",
+    "image": "/static/images/squirtle.png"
+  },
+  {
+    "id": "8",
+    "name": "Carabaffe",
+    "type": ["Eau"],
+    "description": "Sa queue est grande et recouverte d'une épaisse fourrure. La queue devient de plus en plus sombre à mesure que Carabaffe vieillit.",
+    "image": "/static/images/wartortle.png"
+  },
+  {
+    "id": "9",
+    "name": "Tortank",
+    "type": ["Eau"],
+    "description": "Tortank a des canons à eau qui dépassent de sa carapace. Les canons à eau sont très précis. Ils peuvent tirer des balles d'eau avec une précision suffisante pour atteindre des canettes vides à plus de 50 mètres.",
+    "image": "/static/images/blastoise.png"
+  },
+  {
+    "id": "10",
+    "name": "Chenipan",
+    "type": ["Insecte"],
+    "description": "Ses petites pattes sont munies de ventouses qui lui permettent de grimper inlassablement sur les pentes et les murs.",
+    "image": "/static/images/caterpie.png"
+  },
+  {
+    "id": "11",
+    "name": "Chrysacier",
+    "type": ["Insecte"],
+    "description": "Ce Pokémon est vulnérable aux attaques lorsque sa carapace est molle, exposant son corps faible et tendre.",
+    "image": "/static/images/metapod.png"
+  },
+  {
+    "id": "12",
+    "name": "Papilusion",
+    "type": ["Insecte", "Vol"],
+    "description": "En combat, il bat des ailes à grande vitesse pour libérer une poussière très toxique dans l'air.",
+    "image": "/static/images/butterfree.png"
+  },
+  {
+    "id": "13",
+    "name": "Aspicot",
+    "type": ["Insecte", "Poison"],
+    "description": "Souvent trouvé dans les forêts, mangeant des feuilles. Il a un dard venimeux pointu sur sa tête.",
+    "image": "/static/images/weedle.png"
+  },
+  {
+    "id": "14",
+    "name": "Coconfort",
+    "type": ["Insecte", "Poison"],
+    "description": "Presque incapable de bouger, ce Pokémon ne peut que durcir sa carapace pour se protéger des prédateurs.",
+    "image": "/static/images/kakuna.png"
+  },
+  {
+    "id": "15",
+    "name": "Dardargnan",
+    "type": ["Insecte", "Poison"],
+    "description": "Vole à grande vitesse et attaque en utilisant ses grands dards venimeux sur ses pattes avant et sa queue.",
+    "image": "/static/images/beedrill.png"
+  },
+  {
+    "id": "16",
+    "name": "Roucool",
+    "type": ["Normal", "Vol"],
+    "description": "Très docile. S'il est attaqué, il soulève souvent du sable pour se protéger plutôt que de riposter.",
+    "image": "/static/images/pidgey.png"
+  },
+  {
+    "id": "17",
+    "name": "Roucoups",
+    "type": ["Normal", "Vol"],
+    "description": "Ce Pokémon est plein de vitalité. Il survole constamment son grand territoire à la recherche de proies.",
+    "image": "/static/images/pidgeotto.png"
+  },
+  {
+    "id": "18",
+    "name": "Roucarnage",
+    "type": ["Normal", "Vol"],
+    "description": "Lorsqu'il chasse, il rase la surface de l'eau à grande vitesse pour attraper des proies imprudentes telles que Magicarpe.",
+    "image": "/static/images/pidgeot.png"
+  },
+  {
+    "id": "19",
+    "name": "Rattata",
+    "type": ["Normal"],
+    "description": "Mord tout ce qu'il attaque. Petit et très rapide, il est souvent vu dans de nombreux endroits.",
+    "image": "/static/images/rattata.png"
+  },
+  {
+    "id": "20",
+    "name": "Rattatac",
+    "type": ["Normal"],
+    "description": "Rattatac a des crocs d'une longueur incroyable. Ils grandissent continuellement, il doit donc les ronger sur n'importe quel objet dur pour les garder à une longueur raisonnable.",
+    "image": "/static/images/raticate.png"
+  },
+  {
+    "id": "21",
+    "name": "Piafabec",
+    "type": ["Normal", "Vol"],
+    "description": "Très protecteur de son territoire, il jette un cri strident pour éloigner les intrus.",
+    "image": "/static/images/spearow.png"
+  },
+  {
+    "id": "22",
+    "name": "Rapasdepic",
+    "type": ["Normal", "Vol"],
+    "description": "Il vole à grande vitesse et avec une grande agilité. Il chasse en rasant le sol pour attraper des proies comme des insectes.",
+    "image": "/static/images/fearow.png"
+  },
+  {
+    "id": "23",
+    "name": "Abo",
+    "type": ["Poison"],
+    "description": "Abo peut s'étirer pour atteindre plus de deux mètres de long. Il glisse furtivement à travers l'herbe pour se rapprocher de sa proie avant de lui donner un coup de morsure rapide.",
+    "image": "/static/images/ekans.png"
+  },
+  {
+    "id": "24",
+    "name": "Arbok",
+    "type": ["Poison"],
+    "description": "Arbok est capable de broyer des objets durs comme des pierres avec son corps. Une fois qu'il a enroulé son corps autour de l'ennemi, il ne le laisse jamais partir.",
+    "image": "/static/images/arbok.png"
+  },
+  {
+    "id": "25",
+    "name": "Pikachu",
+    "type": ["Électrik"],
+    "description": "Chaque fois que Pikachu rencontre quelque chose de nouveau, il le fait exploser avec une décharge électrique. Si vous trouvez une baie noircie, c'est une preuve que ce Pokémon a mal évalué l'intensité de sa charge.",
+    "image": "/static/images/pikachu.png"
+  },
+  {
+    "id": "26",
+    "name": "Raichu",
+    "type": ["Électrik"],
+    "description": "Ses sacs de joues sont bien développés. Ils sont capables de stocker une grande quantité d'électricité. Si ses sacs se déchargent complètement, il se reposera et se rechargera pendant la nuit.",
+    "image": "/static/images/raichu.png"
+  },
+  {
+    "id": "27",
+    "name": "Sabelette",
+    "type": ["Sol"],
+    "description": "Sabelette s'enroule pour se protéger lorsqu'il est attaqué. Il préfère les environnements secs et sablonneux où il peut facilement se camoufler.",
+    "image": "/static/images/sandshrew.png"
+  },
+  {
+    "id": "28",
+    "name": "Sablaireau",
+    "type": ["Sol"],
+    "description": "Sablaireau utilise ses griffes puissantes pour creuser à travers le sol en quête de nourriture. Il est également capable de rouler en boule pour se défendre.",
+    "image": "/static/images/sandslash.png"
+  },
+  {
+    "id": "29",
+    "name": "Nidoran",
+    "type": ["Poison"],
+    "description": "Nidoran♀ a un tempérament doux, mais il est capable de libérer une puissante toxine pour se protéger. Ses longues oreilles lui permettent de détecter les sons faibles.",
+    "image": "/static/images/nidoranf.png"
+  },
+  {
+    "id": "30",
+    "name": "Nidorina",
+    "type": ["Poison"],
+    "description": "Nidorina est très protectrice envers ses petits. Ses crocs avant sont capables de libérer du poison lorsqu'elle mord.",
+    "image": "/static/images/nidorina.png"
+  },
+  {
+    "id": "31",
+    "name": "Nidoqueen",
+    "type": ["Poison", "Sol"],
+    "description": "Nidoqueen a un corps puissant recouvert d'écailles dures. Elle utilise son corps comme une arme pour défendre son territoire.",
+    "image": "/static/images/nidoqueen.png"
+  },
+  {
+    "id": "32",
+    "name": "Nidoran♂",
+    "type": ["Poison"],
+    "description": "Nidoran♂ est petit mais très agressif. Il utilise les pointes empoisonnées sur son dos pour se défendre contre les prédateurs.",
+    "image": "/static/images/nidoranm.png"
+  },
+  {
+    "id": "33",
+    "name": "Nidorino",
+    "type": ["Poison"],
+    "description": "Nidorino est connu pour sa force et son agressivité. Il charge ses ennemis avec ses cornes empoisonnées.",
+    "image": "/static/images/nidorino.png"
+  },
+  {
+    "id": "34",
+    "name": "Nidoking",
+    "type": ["Poison", "Sol"],
+    "description": "Nidoking a une grande force physique et utilise sa queue puissante pour briser les objets durs. Ses cornes sont également très dangereuses.",
+    "image": "/static/images/nidoking.png"
+  },
+  {
+    "id": "35",
+    "name": "Mélofée",
+    "type": ["Fée"],
+    "description": "Mélofée est connu pour son apparence adorable et son chant hypnotisant. Il danse à la lumière de la lune.",
+    "image": "/static/images/clefairy.png"
+  },
+  {
+    "id": "36",
+    "name": "Mélodelfe",
+    "type": ["Fée"],
+    "description": "Mélodelfe est très rare et se cache loin des humains. Il flotte légèrement sur ses ailes pour éviter de faire du bruit.",
+    "image": "/static/images/clefable.png"
+  },
+  {
+    "id": "37",
+    "name": "Goupix",
+    "type": ["Feu"],
+    "description": "Goupix naît avec une seule queue blanche qui se divise en six lorsque ce Pokémon reçoit beaucoup d'amour de son Dresseur.",
+    "image": "/static/images/vulpix.png"
+  },
+  {
+    "id": "38",
+    "name": "Feunard",
+    "type": ["Feu"],
+    "description": "Feunard est très intelligent et rusé. Il est dit qu'il peut vivre pendant 1 000 ans.",
+    "image": "/static/images/ninetales.png"
+  },
+  {
+    "id": "39",
+    "name": "Rondoudou",
+    "type": ["Normal", "Fée"],
+    "description": "Rondoudou chante une berceuse qui endort quiconque l'écoute. Ses grands yeux mignons font fondre le cœur de n'importe qui.",
+    "image": "/static/images/jigglypuff.png"
+  },
+  {
+    "id": "40",
+    "name": "Grodoudou",
+    "type": ["Normal", "Fée"],
+    "description": "Grodoudou a un corps élastique et doux. Il peut se gonfler comme un ballon pour effrayer ses ennemis.",
+    "image": "/static/images/wigglytuff.png"
+  },
+  {
+    "id": "41",
+    "name": "Nosferapti",
+    "type": ["Poison", "Vol"],
+    "description": "Nosferapti utilise ses ultrasons pour naviguer dans l'obscurité. Il vit dans des grottes et sort la nuit pour chasser.",
+    "image": "/static/images/zubat.png"
+  },
+  {
+    "id": "42",
+    "name": "Nosferalto",
+    "type": ["Poison", "Vol"],
+    "description": "Nosferalto est plus fort et plus rapide que Nosferapti. Ses crocs peuvent percer les os de ses proies.",
+    "image": "/static/images/golbat.png"
+  },
+  {
+    "id": "43",
+    "name": "Mystherbe",
+    "type": ["Plante", "Poison"],
+    "description": "Mystherbe libère des spores toxiques lorsqu'il est attaqué. Il préfère les endroits sombres et humides.",
+    "image": "/static/images/oddish.png"
+  },
+  {
+    "id": "44",
+    "name": "Ortide",
+    "type": ["Plante", "Poison"],
+    "description": "Ortide a une odeur nauséabonde qui repousse ses ennemis. Il utilise ses feuilles pour absorber l'énergie solaire.",
+    "image": "/static/images/gloom.png"
+  },
+  {
+    "id": "45",
+    "name": "Rafflesia",
+    "type": ["Plante", "Poison"],
+    "description": "Rafflesia a une fleur gigantesque sur la tête. Cette fleur libère un parfum enivrant qui attire ses proies.",
+    "image": "/static/images/vileplume.png"
+  },
+  {
+    "id": "46",
+    "name": "Paras",
+    "type": ["Insecte", "Plante"],
+    "description": "Paras vit dans des cavernes et des forêts humides. Il cultive des champignons sur son dos qui lui fournissent des nutriments.",
+    "image": "/static/images/paras.png"
+  },
+  {
+    "id": "47",
+    "name": "Parasect",
+    "type": ["Insecte", "Plante"],
+    "description": "Parasect est contrôlé par les champignons qui poussent sur son dos. Il est constamment à la recherche de bois mort et d'humidité.",
+    "image": "/static/images/parasect.png"
+  },
+  {
+    "id": "48",
+    "name": "Mimitoss",
+    "type": ["Insecte", "Poison"],
+    "description": "Mimitoss a de grands yeux qui peuvent voir dans l'obscurité. Il utilise ses poils pour détecter les vibrations dans l'air.",
+    "image": "/static/images/venonat.png"
+  },
+  {
+    "id": "49",
+    "name": "Aéromite",
+    "type": ["Insecte", "Poison"],
+    "description": "Aéromite bat des ailes pour libérer des spores toxiques. Ses ailes brillent dans le noir.",
+    "image": "/static/images/venomoth.png"
+  },
+  {
+    "id": "50",
+    "name": "Taupiqueur",
+    "type": ["Sol"],
+    "description": "Taupiqueur creuse des tunnels souterrains. Il évite la lumière du jour et ne sort que la nuit.",
+    "image": "/static/images/diglett.png"
+  },
+  {
+    "id": "51",
+    "name": "Triopikeur",
+    "type": ["Sol"],
+    "description": "Triopikeur est en fait un trio de Taupiqueur. Il peut creuser des tunnels à grande vitesse.",
+    "image": "/static/images/dugtrio.png"
+  }
+]
