@@ -22,6 +22,7 @@ body {
   display: flex;
   align-items: center; /* Centrer le contenu verticalement */
   justify-content: center; /* Centrer le contenu horizontalement */
+  position: relative;
 }
 
 .banner-logo {
@@ -156,4 +157,47 @@ footer {
 
 .pokemon-card:hover .pokemon-number {
   display: block;
+}
+@media (max-width: 1200px) {
+  .pokemon-card {
+    width: calc(50% - 2rem);
+  }
+}
+
+/* Responsive design pour les écrans plus petits */
+@media (max-width: 768px) {
+  .pokemon-card {
+    width: calc(100% - 2rem);
+  }
+
+  .banner {
+    height: 1rem; /* Ajustez la hauteur pour les écrans plus petits */
+  }
+}
+
+/* Responsive design pour les très petits écrans */
+@media (max-width: 480px) {
+  .pokemon-card {
+    width: calc(100% - 2rem);
+  }
+
+  .pokemon-card header {
+    padding: 0.5rem;
+  }
+
+  .pokemon-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .pokemon-card p {
+    font-size: 0.9rem;
+  }
+
+  .pokemon-card .pure-button {
+    padding: 0.3rem 0;
+  }
+
+  .pokemon-detail {
+    padding: 1rem;
+  }
 }
