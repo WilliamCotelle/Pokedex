@@ -10,18 +10,79 @@ body {
   padding: 0;
 }
 
+/* Styles pour chaque type de Pokémon */
+.type-plante {
+  background-color: #78c850 !important;
+}
+
+.type-poison {
+  background-color: #a040a0 !important;
+}
+
+.type-feu {
+  background-color: #f08030 !important;
+}
+
+.type-vol {
+  background-color: #a890f0 !important;
+}
+
+.type-eau {
+  background-color: #6890f0 !important;
+}
+
+.type-insecte {
+  background-color: #a8b820 !important;
+}
+
+.type-normal {
+  background-color: #a8a878 !important;
+}
+
+.type-électrik {
+  background-color: #f8d030 !important;
+}
+
+.type-sol {
+  background-color: #e0c068 !important;
+}
+
+.type-fée {
+  background-color: #ee99ac !important;
+}
+
+.type-roche {
+  background-color: #b8a038 !important;
+}
+
+.type-combat {
+  background-color: #c03028 !important;
+}
+
+.type-psy {
+  background-color: #f85888 !important;
+}
+
+.type-glace {
+  background-color: #98d8d8 !important;
+}
+
+.type-dragon {
+  background-color: #7038f8 !important;
+}
+
 .banner {
   background-image: url(/static/images/bg-header2.png);
   background-repeat: no-repeat;
-  background-size: cover; /* Ajuste l'image pour qu'elle soit entièrement visible */
+  background-size: cover;
   background-position: center;
   width: 100%;
-  height: 30rem; /* Ajustez la hauteur selon vos besoins */
+  height: 30rem;
   padding: 1rem;
   text-align: center;
   display: flex;
-  align-items: center; /* Centrer le contenu verticalement */
-  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -68,7 +129,6 @@ body {
 
 .pokemon-card header {
   padding: 1rem;
-  background-color: #ff4b5c;
   color: #fff;
   min-height: 100%;
 }
@@ -84,7 +144,7 @@ body {
 }
 
 .pokemon-card .pure-button {
-  background-color: #ff4b5c;
+  background-color: transparent;
   color: #fff;
   text-align: center;
   display: block;
@@ -95,7 +155,9 @@ body {
 }
 
 .pokemon-card .pure-button:hover {
-  background-color: #e3444e;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: transform 0.2s, color 0.2s, text-decoration 0.2s;
 }
 
 .pokemon-detail {
@@ -109,6 +171,7 @@ body {
 
 .pokemon-detail header {
   text-align: center;
+  color: #fff;
 }
 
 .pokemon-detail img {
@@ -158,6 +221,7 @@ footer {
 .pokemon-card:hover .pokemon-number {
   display: block;
 }
+
 @media (max-width: 1200px) {
   .pokemon-card {
     width: calc(50% - 2rem);

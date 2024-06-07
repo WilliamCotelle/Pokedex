@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<article class="pokemon-detail">
+  <header class="<%= `type-${pokemon.types[0].toLowerCase()}` %>">
+    <img class="pokemon-img pure-img" src="<%= pokemon.image_url %>" alt="<%= pokemon.name %>" />
+    <h2><%= pokemon.name %></h2>
+    <h3>Type: <%= pokemon.types.join(', ') %></h3>
+    <p><%= pokemon.description %></p>
+  </header>
+</article>
+
+<%- include('partials/footer') %>
