@@ -1,5 +1,9 @@
 const pool = require("../db");
 
+const homePage = (req, res) => {
+  res.render("index");
+};
+
 const getPokemons = async (req, res) => {
   try {
     const result = await pool.query(`
@@ -9,10 +13,10 @@ const getPokemons = async (req, res) => {
       GROUP BY pokemon.id 
       ORDER BY pokemon.id
     `);
-    res.render("index", { pokemons: result.rows });
+    res.render("pokemons", { pokemons: result.rows });
   } catch (err) {
     console.error(err);
-    res.status(500).send("Erreur serveur");
+    res.status(500).render("500");
   }
 };
 
@@ -33,11 +37,11 @@ const getPokemonById = async (req, res) => {
       pokemon.types = typeResult.rows.map((row) => row.type);
       res.render("pokemon", { pokemon });
     } else {
-      res.status(404).send("Pokémon non trouvé");
+      res.status(404).render("404");
     }
   } catch (err) {
     console.error(err);
-    res.status(500).send("Erreur serveur");
+    res.status(500).render("500");
   }
 };
 
@@ -49,7 +53,7 @@ const getTypes = async (req, res) => {
     res.render("types", { types });
   } catch (err) {
     console.error(err);
-    res.status(500).send("Erreur serveur");
+    res.status(500).render("500");
   }
 };
 
@@ -72,13 +76,26 @@ const getPokemonsByType = async (req, res) => {
     res.render("type", { pokemons, type });
   } catch (err) {
     console.error(err);
-    res.status(500).send("Erreur serveur");
+    res.status(500).render("500");
+  }
+};
+
+const getPokemonNames = async (req, res) => {
+  try {
+    const result = await pool.query("SELECT name FROM pokemon ORDER BY name");
+    const names = result.rows.map((row) => row.name);
+    res.json(names);
+  } catch (err) {
+    console.error(err);
+    res.status(500).render("500");
   }
 };
 
 module.exports = {
+  homePage,
   getPokemons,
   getPokemonById,
   getTypes,
   getPokemonsByType,
+  getPokemonNames,
 };

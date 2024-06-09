@@ -1,44 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <title>O'Pokédex</title>
-  </head>
-  <body>
-    <header class="header pure-u-1">
-      <div class="logo">
-        <a href="/" title="Retour à l'accueil">
-          <img class="logo-img" src="/static/images/logo3.png" alt="Logo de O'Pokédex">
-        </a>
-      </div>
-      <div class="nav">
-        <form class="search-form pure-form" action="/search" method="GET">
-          <input type="text" name="query" placeholder="Rechercher un Pokémon" class="search-input pure-input-rounded" />
-          <button type="submit" class="search-button pure-button pure-button-primary">Rechercher</button>
-        </form>
-        <nav class="menu pure-menu">
-          <ul class="menu-list pure-menu-list">
-            <li class="menu-item pure-menu-item"><a href="/" class="menu-link pure-menu-link">Accueil</a></li>
-            <li class="menu-item pure-menu-item"><a href="/types" class="menu-link pure-menu-link">Types</a></li>
-            <li class="menu-item pure-menu-item"><a href="/contact" class="menu-link pure-menu-link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="nav-menu" id="nav-menu">
-        <form class="search-form pure-form" action="/search" method="GET">
-          <input type="text" name="query" placeholder="Rechercher un Pokémon" class="search-input pure-input-rounded" />
-          <button type="submit" class="search-button pure-button pure-button-primary">Rechercher</button>
-        </form>
-        <nav class="menu pure-menu">
-          <ul class="menu-list pure-menu-list">
-            <li class="menu-item pure-menu-item"><a href="/" class="menu-link pure-menu-link">Accueil</a></li>
-            <li class="menu-item pure-menu-item"><a href="/types" class="menu-link pure-menu-link">Types</a></li>
-            <li class="menu-item pure-menu-item"><a href="/contact" class="menu-link pure-menu-link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<header class="header pure-u-1">
+  <div class="logo">
+    <a href="/pokemon" title="Retour à l'accueil">
+      <img class="logo-img" src="/static/images/logo3.png" alt="Logo de O'Pokédex">
+    </a>
+  </div>
+  <div class="nav">
+    <form class="search-form pure-form" action="/search" method="GET">
+      <input type="text" id="search-query" name="query" placeholder="Rechercher un Pokémon" class="search-input pure-input-rounded" />
+      <button type="submit" class="search-button pure-button pure-button-primary">Rechercher</button>
+    </form>
+    <nav class="menu pure-menu">
+      <ul class="menu-list pure-menu-list">
+        <li class="menu-item pure-menu-item"><a href="/pokemon" class="menu-link pure-menu-link">Accueil</a></li>
+        <li class="menu-item pure-menu-item"><a href="/types" class="menu-link pure-menu-link">Types</a></li>
+        <li class="menu-item pure-menu-item"><a href="/contact" class="menu-link pure-menu-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="nav-menu" id="nav-menu">
+    <form class="search-form pure-form" action="/search" method="GET">
+      <input type="text" id="search-query-mobile" name="query" placeholder="Rechercher un Pokémon" class="search-input pure-input-rounded" />
+      <button type="submit" class="search-button pure-button pure-button-primary">Rechercher</button>
+    </form>
+    <nav class="menu pure-menu">
+      <ul class="menu-list pure-menu-list">
+        <li class="menu-item pure-menu-item"><a href="/" class="menu-link pure-menu-link">Accueil</a></li>
+        <li class="menu-item pure-menu-item"><a href="/types" class="menu-link pure-menu-link">Types</a></li>
+        <li class="menu-item pure-menu-item"><a href="/contact" class="menu-link pure-menu-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  $(function() {
+    const fetchPokemonNames = async () => {
+      try {
+        const response = await fetch('/pokemon-names');
+        return await response.json();
+      } catch (error) {
+        console.error('Erreur lors de la récupération des noms de Pokémon:', error);
+        return [];
+      }
+    };
+
+    fetchPokemonNames().then(pokemonNames => {
+      $("#search-query, #search-query-mobile").autocomplete({
+        source: pokemonNames,
+        minLength: 2
+      });
+    });
+  });
+</script>
 
   

@@ -1,20 +1,14 @@
-<%- include('partials/header') %>
-
-<div class="pokemon-list pure-g">
-  <% pokemons.forEach(p => { 
-    const typeClass = `type-${p.types[0].toLowerCase()}`;
-  %>
-    <div class="pokemon-card pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-      <header class="<%= typeClass %>">
-        <span class="pokemon-number"><p>N°<%= p.id %></p></span>
-        <img class="pokemon-img pure-img" src="<%= p.image_url %>" alt="<%= p.name %>" />
-        <h2><%= p.name %></h2>
-        <!-- <p><%= p.description %></p> -->
-        <a class="pure-button" href="/pokemon/<%= p.id %>">Voir détails</a>
-      </header>
+<%- include('partials/head') %>
+<body>
+    <div class="container">
+        <img src="/static/images/bg-header2.png" alt="Pokédex Background" class="background-image">
+        <div class="overlay">
+            <button class="enter-button">Entrer dans le Pokédex de William</button>
+        </div>
     </div>
-  <% }); %>
-</div>
-
+    <script>
+        document.querySelector('.enter-button').addEventListener('click', function() {
+            window.location.href = "/pokemon";
+        });
+    </script>
 <%- include('partials/footer') %>
-

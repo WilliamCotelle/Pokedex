@@ -1,0 +1,24 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<div class="contact-container">
+  <h1>Contactez-nous</h1>
+  <p>Merci de prendre le temps de consulter mon projet. Si vous le souhaitez vous pouvez laisser un commentaire ou une proposition d'amélioration.</p>
+  <form class="contact-form" action="/contact" method="POST">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="surname">Prénom</label>
+      <input type="text" id="surname" name="surname" required>
+    </div>
+    <div class="form-group">
+      <label for="comments">Commentaires</label>
+      <textarea id="comments" name="comments" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-button">Envoyer</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,3 +1,4 @@
+<%- include('partials/head') %>
 <%- include('partials/header') %>
 
 <h1>Pokémon de type <%= type %></h1>
@@ -6,16 +7,16 @@
   <% pokemons.forEach(p => {
     const typeClass = `type-${p.types[0].toLowerCase()}`;
   %>
-    <div class="pokemon-card pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 <%= typeClass %>">
+    <a href="/pokemon/<%= p.id %>" class="pokemon-card pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 <%= typeClass %>">
       <header>
         <span class="pokemon-number"><p>N°<%= p.id %></p></span>
         <img class="pokemon-img pure-img" src="<%= p.image_url %>" alt="<%= p.name %>" />
         <h2><%= p.name %></h2>
-        <p><%= p.description %></p>
-        <a class="pure-button" href="/pokemon/<%= p.id %>">Voir détails</a>
+        <!-- <p><%= p.description %></p> -->
       </header>
-    </div>
+    </a>
   <% }); %>
 </div>
+<a href="/types" class="back-button">Retour aux types</a>
 
 <%- include('partials/footer') %>

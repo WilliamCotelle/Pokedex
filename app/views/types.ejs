@@ -1,13 +1,16 @@
+<%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<h1>Types de Pokémon</h1>
+<div class="content-container">
+  <h1 class="content-title">Types de Pokémon</h1>
 
-<div class="type-list">
-  <% types.forEach(t => { %>
-    <div class="type-item <%= 'type-' + t.toLowerCase() %>">
-      <a href="/type/<%= t %>"><%= t %></a>
-    </div>
-  <% }); %>
+  <div class="types-container">
+    <% types.forEach(t => { %>
+      <a href="/type/<%= encodeURIComponent(t) %>" class="type-card <%= 'type-' + t.toLowerCase() %>">
+        <div><%= t %></div>
+      </a>
+    <% }); %>
+  </div>
 </div>
 
 <%- include('partials/footer') %>
