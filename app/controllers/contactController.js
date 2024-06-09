@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const slackWebhookUrl =
-  "https://hooks.slack.com/services/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";
+  "https://hooks.slack.com/services/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";
 
 const getContactForm = (req, res) => {
   res.render("contact");
