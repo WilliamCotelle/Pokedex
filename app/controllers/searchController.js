@@ -4,7 +4,7 @@ exports.search = async (req, res) => {
   const queryParam = req.query.query;
 
   if (!queryParam) {
-    return res.redirect("/pokemon");
+    return res.redirect("/pokemonapp");
   }
 
   const query =

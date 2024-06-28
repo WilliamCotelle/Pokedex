@@ -1,5 +1,7 @@
-DROP TABLE IF EXISTS type;
-DROP TABLE IF EXISTS pokemon;
+-- Création de la base de données
+
+-- Création de la table type et pokémon si elles n'existent pas
+DROP TABLE IF EXISTS "type", "pokemon";
 
 -- Création de la table pokemon
 CREATE TABLE IF NOT EXISTS pokemon (
@@ -11,7 +13,7 @@ CREATE TABLE IF NOT EXISTS pokemon (
 
 -- Création de la table type
 CREATE TABLE IF NOT EXISTS type (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY, --identifiant unique, serial veut dire que l'identifiant est auto incrémenté
     pokemon_id INT,
     type VARCHAR(50),
     FOREIGN KEY (pokemon_id) REFERENCES pokemon(id)

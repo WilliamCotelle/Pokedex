@@ -19,6 +19,11 @@ app.use(bodyParser.json());
 
 app.use(router);
 
+app.use((req, res, next) => {
+  console.log(`Requête pour : ${req.url}`);
+  next();
+});
+
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
 });

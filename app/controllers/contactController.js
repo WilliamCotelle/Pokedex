@@ -1,7 +1,6 @@
 const axios = require("axios");
-
-const slackWebhookUrl =
-  "https://hooks.slack.com/services/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";
+require("dotenv").config();
+const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL; // URL du webhook Slack
 
 const getContactForm = (req, res) => {
   res.render("contact");
@@ -31,7 +30,7 @@ const submitContactForm = async (req, res) => {
     res.render("thank-you", { surname, name });
   } catch (error) {
     console.error("Erreur lors de l'envoi du message à Slack:", error);
-    res.status(500).send("Erreur serveur");
+    res.status(500).render("500");
   }
 };
 

@@ -1,4 +1,4 @@
-.env,
-db.sql,
-contactController,
+.env
+db.sql
+node_modules
 .vercel
